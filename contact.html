@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nexus Digital Resource Centre</title>
+    <style>
+        :root {
+            --primary-blue: #004aad;
+            --accent-teal: #00c2cb;
+            --text-dark: #2d3436;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+            --header-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Navigation --- */
+        .top-bar {
+            background-color: #f4f4f4;
+            padding: 10px;
+            font-size: 13px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+        }
+
+        header.main-nav {
+            background-color: var(--header-bg);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+
+        .logo-area { display: flex; align-items: center; }
+        #logo { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .brand-name { margin-left: 12px; font-weight: bold; font-size: 1.1rem; color: var(--primary-blue); }
+
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { text-decoration: none; color: var(--text-dark); font-weight: 600; }
+        nav ul li a:hover, nav ul li a.active { color: var(--primary-blue); }
+
+        /* --- Contact Page Content --- */
+        .contact-hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+            color: var(--white);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -50px auto 60px auto;
+            padding: 0 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .info-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary-blue);
+        }
+
+        .info-box h2 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-teal);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
+
+        .contact-detail {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-detail strong {
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-detail span {
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            header.main-nav { flex-direction: column; padding: 15px; }
+            nav ul { margin-top: 15px; }
+            .container { margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        Email: nexusdigitalresourcecentre@gmail.com | Twitter: @nexusdigital | WhatsApp: +256 763582846 | Facebook: Nexus Digital Resource Centre
+    </div>
+
+    <header class="main-nav">
+        <div class="logo-area">
+            <img src="canva-log.png" id="logo" alt="Nexus Logo">
+            <span class="brand-name">NEXUS DIGITAL</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="activities.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-hero">
+        <h1>Visit the Resource Centre</h1>
+        <p>Your premier safe gateway to the digital world and unlocking potentials.</p>
+    </div>
+
+    <div class="container">
+        <div class="contact-grid">
+            <div class="info-box">
+                <h2>Our Location</h2>
+                <div class="contact-detail">
+                    <strong>📍 Physical Address</strong>
+                    <span>Kuluva Trading Centre,</span>
+                    <span>Kuluva Hospital Road,</span>
+                    <span>Arua District, Uganda.</span>
+                </div>
+                <div class="contact-detail">
+                    <strong>📧 Email Us</strong>
+                    <span>nexusdigitalresourcecentre@gmail.com</span>
+                    <strong>📞 Phone Number</strong>
+                    <span>+256 763582846</span>
+                    <strong>🌐 Website</strong>
+                    <span>www.nexusdigitalresourcecentre.com</span>
+                    <strong>facebook</strong>
+                    <span>www.facebook.com/nexusdigitalresourcecentre</span>
+                    <strong>twitter</strong>
+                    <span>www.twitter.com/nexusdigitalresourcecentre</span>
+                </div>
+                <div class="contact-detail">
+                    <strong>💬 WhatsApp Support</strong>
+                    <span>+256 763582846</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>Operating Hours</h2>
+                <div class="contact-detail">
+                    <strong>Monday — Friday</strong>
+                    <span>8:00 AM – 5:00 PM</span>
+                </div>
+                <div class="contact-detail">
+                    <strong>Saturday</strong>
+                    <span>9:00 AM – 1:00 PM</span>
+                </div>
+                <div class="contact-detail">
+                    <strong>Sunday</strong>
+                    <span>Closed (Community Outreach)</span>
+                </div>
+                <div style="margin-top: 20px; padding: 15px; background: #eef9fa; border-radius: 8px; font-size: 0.9rem; color: #00666b;">
+                    <strong>Note:</strong> We are open 24 hours for inquiries and enrollment for trainings.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Nexus Digital Resource Centre. All Rights Reserved.<br>
+            
+        </footer>
+    </div>
+
+</body>
+</html>

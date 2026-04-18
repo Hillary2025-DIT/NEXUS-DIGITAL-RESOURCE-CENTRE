@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital Resource Centre | Home</title>
+    <style>
+        /* Modern Design Variables */
+        :root {
+            --primary: #004aad;
+            --secondary: #002e6e;
+            --accent: #ffcc00;
+            --light-bg: #f8f9fa;
+            --text-dark: #2d3436;
+        }
+
+        body { margin: 0; font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-dark); scroll-behavior: smooth; }
+        
+        /* Navigation */
+        .top-bar {
+            background: var(--primary);
+            color: white;
+            padding: 8px 5%;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header {
+            background: #fff;
+            padding: 12px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-area { display: flex; align-items: center; }
+        #logo { width: 50px; height: 50px; border-radius: 50%; }
+        .brand-name { margin-left: 12px; font-weight: 800; font-size: 1.3rem; color: var(--primary); }
+        .brand-tagline { font-size: 0.9rem; color: var(--secondary); margin-right: 12px;}
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { text-decoration: none; color: var(--text-dark); font-weight: 600; transition: 0.3s; }
+        nav ul li a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { 
+            height: 70vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            color: white; 
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('trainee.png') center/cover no-repeat;
+        }
+        .hero-content h1 { font-size: 3.2rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero-content p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; }
+
+        /* Bootcamp Highlight (First Priority) */
+        .bootcamp-section { padding: 80px 10%; background: #fff; }
+        .section-tag { color: var(--primary); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px; }
+
+        .bootcamp-card {
+            background: var(--light-bg);
+            padding: 40px;
+            border-radius: 15px;
+            border-top: 6px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+        .bootcamp-card:hover { transform: translateY(-10px); }
+        .bootcamp-card h3 { font-size: 1.5rem; margin-bottom: 20px; color: var(--secondary); }
+        .bootcamp-card ul { padding-left: 20px; margin: 0; }
+        .bootcamp-card ul li { margin-bottom: 12px; }
+
+        /* Services Section (Secondary) */
+        .services-section { padding: 60px 10%; background: var(--secondary); color: white; }
+        .services-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 30px; }
+        .service-item { flex: 1; min-width: 250px; text-align: center; padding: 20px; }
+        .service-item h4 { font-size: 1.3rem; margin-bottom: 10px; color: var(--accent); }
+
+        /* Footer */
+        footer { background: #111; color: #ccc; padding: 60px 10% 20px; }
+        .footer-flex { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+        .footer-bottom { border-top: 1px solid #333; margin-top: 40px; padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>📍 Kuluva, Arua, Uganda</span>
+        <span>📧 nexusdigitalresourcecentre@gmail.com | 📱 +256 763582846 | 🌐 www.nexusdigitalresourcecentre.com | whatsapp: +256 763582846</span>
+    </div>
+
+    <header>
+        <div class="logo-area">
+            <img src="canva-log.png" id="logo" alt="Nexus Logo">
+            <span class="brand-name">NEXUS DIGITAL RESOURCE CENTRE <br></span>
+            <span class="brand-tagline"> empowering the digital future</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="activities.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nexus Digital Resource Centre</h1>
+            <p>The Premier safe gateway to the digital world. Unlocking opportunities through Digital skills for the West Nile community.</p>
+            <a href="activities.html" style="background: var(--accent); color: #000; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold;">Browse our Services</a>
+        </div>
+    </section>
+
+    <section class="bootcamp-section" id="bootcamps">
+        <center>
+            <span class="section-tag">Trust us with skilling your Digital Future at Nexus Digital Resource Centre   </span>
+            <h2 style="font-size: 2.5rem; margin: 10px 0;">Our digital literacy and ICT skills programs covers;</h2>
+        </center>
+
+        <div class="grid">
+            <div class="bootcamp-card">
+                <h3>📱 Smartphone Utilization</h3>
+                <img src="user-with smartphone.png" alt="user learning" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                <p><strong>Professional Workflows:</strong></p>
+                <ul>
+                    <li>Mobile internet basics and browser/search engine skills</li>
+                    <li>WhatsApp Business for professional communication</li>
+                    <li>Google tools (Docs/Forms/Drive basics)</li>
+                    <li>File management, app installation, and safe downloads</li>
+                </ul>
+            </div>
+
+            <div class="bootcamp-card">
+                <h3>🛡️ Cyber-Safety & Anti-Scam</h3>
+                <img src="scam-alert.png" alt="scam alert" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                <p><strong>Security Protocols:</strong></p>
+                <ul>
+                    <li>Phishing and fake links recognition</li>
+                    <li>2-Factor Authentication (2FA) and privacy settings</li>
+                    <li>Spotting fraud patterns (fake jobs, airtime, and money offers)</li>
+                    <li>Recovery and reporting techniques for scams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <center>
+            <h2 style="font-size: 2.2rem;">Nexus Digital Resource Centre Services</h2>
+            <p style="opacity: 0.8;"> We support our community with specialized ICT solutions.</p>
+        </center>
+        <div class="services-grid">
+            <div class="service-item">
+                <h4>Digital Literacy</h4>
+                <p>Helping beginners navigate smart phones ,computers and the internet with confidence.</p>
+            </div>
+            <div class="service-item">
+                <h4>ICT Consultancy</h4>
+                <p>Strategic advice for entrepreneurs looking to integrate modern tech tools.</p>
+            </div>
+            <div class="service-item">
+                <h4>Community Access</h4>
+                <p>Providing a safe environment for residents to access digital resources and generate income.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-flex">
+            <div>
+                <h3 style="color: #fff;">Nexus Digital Resource Centre</h3>
+                <p>Kuluva Trading Centre, Kuluva Hospital Road,<br>Arua District, Uganda.</p>
+            </div>
+            <div>
+                <h4 style="color: #fff;">Connect with Us</h4>
+                <p>WhatsApp: +256 763582846<br>Facebook: @NexusDigitalResourceCentre <br>twitter: @NexusDigitalRC <br>linkedin: linkedin.com/company/nexus-digital-resource-centre   </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Nexus Digital Resource Centre. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
